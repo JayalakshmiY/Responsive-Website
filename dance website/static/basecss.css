@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 28px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 42px;
+    filter: invert(1);
+    border-radius: 50%;
+}
+#navbar{
+    background-color: #ffffff;
+    font-family: 'Yeon Sung' ;
+    padding: 13px 14px;
+    width:100%;
+    position: fixed;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar li{ 
+    list-style: none;
+
+}
+#navbar li a{ 
+    color:rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+   text-decoration: none;
+    padding: 13px 20px;
+
+}
+#navbar li a:hover{
+    color: rgb(188, 47, 47);  
+    font-weight: bold;
+}
+#footer{
+    background-color: black;
+    height: 100px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding: 10px;
+    font-size: 1.2rem;
+ }
+.btn_1{
+    width:10%;
+    margin: 0 10px 10px 0; /* for demo only */
+    position: relative;
+    left:38%;
+    top:5px;
+    cursor:pointer;
+border:2px solid black;
+border-radius: 5px;
+font-size: 13px;
+}
+i{
+    color: black;
+    padding:5px 8px;
+}
+.btn_1 i:hover{
+   color: blue;
+   font-size: 14px;
+}
+.container_1{
+border:1px solid black;
+box-shadow:4px -5px #ffd9b5, -5px 4px white, 5px -4px #e7dbc7;
+position: fixed;
+top: 28%;
+left: 38%;
+text-align: center;
+padding: 56px 20px;
+}
+.container_1 h1{
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+    text-shadow: 4px 3px #dfd3c3;
+    padding:10px 10px;
+    margin-bottom: 22px;
+    margin-top: -45px;
+}
+.box{
+    width:100%;
+    padding:7px 10px;
+    border-bottom: 2px solid #64462d;
+}
+.box input{  
+    background: none;
+    width: 85%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none; 
+}
+.login ::placeholder{
+    font-size: 20px;
+    color:black;
+}
+.loginbtn{
+    color:black;
+    cursor: pointer;
+    outline: none;
+    margin: 29px 0;
+    padding: 5px 20px;
+    /* border: 6px solid #d7cbb5; */
+    background-color: #d7cbb5;
+    text-shadow: 2px 2px #dfd3c3;
+    border-radius: 6px;
+    font-size: 21px;
+    background: none;
+    font-weight: bold;
+}
+.loginbtn:hover{
+    opacity: 0.5;
+    color: rgb(30, 26, 22); 
+    background: white;  
+}
+.x_mark{
+    position:relative;
+    bottom: 85px;
+    left: 150px;
+}
+#log{
+    display: none;
+}
+.wrapper{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+    display: none;
+}
+@media only screen and (max-width:927px){
+    #navbar ul{
+        flex-wrap: wrap;
+        gap:10px;
+        font-weight: bold;
+    }
+    .v-resp{
+        padding:10px 10px;
+    }
+    .container_1{
+        left: 33%;
+    }
+    #introSection div.small {
+        position: absolute;
+        top: 238px;
+    }
+    #navbar{
+        height:170px;
+        z-index: 1;
+    }
+    .btn_1{
+        left:0%;
+        width:100px;
+    }
+    #footer{
+        position: relative;
+        top: 268px;
+    }
+    /* .wrapper{
+        display: block;
+    } */
+}
+@media only screen and (max-width:644px){
+    #footer{
+        position: relative;
+        top: 0px;
+    }
+    #navbar ul{
+        flex-wrap: wrap;
+        gap:10px;
+        font-weight: bold;
+    }
+    .v-resp{
+        padding:10px 10px;
+    }
+    /* .wrapper{
+        display: block;
+    } */
+}
+@media only screen and (max-width:372px){
+    #navbar ul{
+        flex-direction: column;
+        gap:10px;
+        font-weight: bold;
+    }
+      #navbar{
+        height:378px;
+    }
+}

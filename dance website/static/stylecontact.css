@@ -1,0 +1,68 @@
+.container{
+    padding:56px 10px;
+    margin:0px 10px;
+    min-height: 0vh;
+    background-color: #dadada;
+}
+h1{
+    text-align: center;
+    margin:12px 0;
+    font-family:fantasy;
+    font-weight: 100;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myInput{
+    font-size: 17px;
+    width:29%;
+    padding: 9px;
+    margin: 8px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.btn{
+    padding: 2px 12px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+@media only screen and (max-width:1200px) and (min-width:928px){
+    .container_1{
+        top: 20%;
+        left: 37%;
+    }
+}
+@media only screen and (max-width:927px) and (min-width:645px){
+    .container{
+        position: relative;
+            top: 170px;
+    }
+    .container_1{
+        z-index: 2;
+        top: 38%;
+        left: 26%;
+    }
+}
+
+@media only screen and (max-width:644px){
+.container{
+    position: relative;
+            top: 170px;
+}
+#footer{
+    position: relative;
+    top: 268px;
+}
+.container_1{
+    z-index: 2;
+    top: 38%;
+    left: 8%;
+}
+}

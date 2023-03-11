@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title Jayu Dance Academy
+    link(rel="shortcut icon" type="x-icon" href="https://w7.pngwing.com/pngs/365/174/png-transparent-abstract-painting-of-ballerina-dancer-ballet-broken-dancers-png-material-people-ballet-dancer.png")
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/temp.png")
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+        div.small Welcome to Jayu's Dance Academy
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/dance1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsers
+          img(src="/static/img/spon1.png", alt="hp", class="spImage")
+          img(src="/static/img/spon2.png", alt="apple", class="spImage")
+          img(src="/static/img/spon3.png", alt="skype", class="spImage")
+          img(src="/static/img/spon4.1.png", alt="google", class="spImage")
+    footer#footer
+        p Copyright © 2020 JayuAcademy.com | All Rights Reserved

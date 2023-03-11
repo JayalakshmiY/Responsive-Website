@@ -1,0 +1,44 @@
+extend base.pug
+
+block scripts 
+  script(src='/static/index.js')
+
+block style 
+  style
+      include ../static/style.css
+
+block content 
+    section#introSection
+        div.small Welcome to Jayu's Dance Academy
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/dance1.png")
+                div.card-content
+                    p This is the best dance academy 
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsers
+          img(src="/static/img/spon1.png", alt="hp", class="spImage")
+          img(src="/static/img/spon2.png", alt="apple", class="spImage")
+          img(src="/static/img/spon3.png", alt="skype", class="spImage")
+          img(src="/static/img/spon4.1.png", alt="google", class="spImage")

@@ -1,0 +1,45 @@
+doctype html 
+html 
+  head 
+    title Jayu Dance Academy 
+    link(rel="shortcut icon" type="x-icon" href="https://w7.pngwing.com/pngs/365/174/png-transparent-abstract-painting-of-ballerina-dancer-ballet-broken-dancers-png-material-people-ballet-dancer.png")
+    <script src="https://kit.fontawesome.com/39a9d14536.js" crossorigin="anonymous"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    script
+      include ../static/index.js
+    block scripts 
+    style
+      include ../static/basecss.css
+    block style 
+  body 
+    nav.nav-resp#navbar
+      ul
+        div#logo
+            img(src="/static/img/temp.png")
+        li.v-resp #[a(href="/") Home]
+        li.v-resp #[a(href="/") About]
+        li.v-resp #[a(href="/") Services]
+        li.v-resp #[a(href="/") Class Info]
+        li.v-resp #[a(href="/contactus") Contact Us]
+        button.btn_1.v-resp(onclick='show(1)', href='#')
+          i.fa-solid.fa-user
+            |login
+        .wrapper 
+          i.fa-solid.fa-bars
+    .container_1#log 
+      h1 login
+      a.x_mark(onclick='show(2)', href='#')
+        i.fa-solid.fa-xmark
+      form(action="#" class="login" method="post" autocomplete="off")
+        div.box
+          i.fa-sharp.fa-solid.fa-envelope
+            input(type="email" name="email" id="email" placeholder="Email")
+        div.box
+          i.fa-solid.fa-key
+            input(type="password" name="password" id="password" placeholder="Password")
+        div
+          button.loginbtn login
+    block content 
+    footer#footer
+      p Copyright © 2020 JayuAcademy.com | All Rights Reserved 
+    
